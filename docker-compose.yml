@@ -10,7 +10,7 @@ services:
   item-app:
     image: andydarmawan243/item-app:item-app-v1 # Menggunakan gambar Docker yang telah diunggah ke Docker Hub dengan nama "item-app" dan tag "item-app-v1"
     ports:
-      - "80:80" # Meneruskan port 80 di host ke port 80 di dalam kontainer
+      - "80:8080" # Meneruskan port 80 di host ke port 8080 di dalam kontainer
     depends_on:
       - item-db # Menunggu kontainer "item-db" untuk selesai sebelum menjalankan kontainer "item-app"
     restart: always # Selalu mencoba untuk memulai ulang kontainer jika terhenti
